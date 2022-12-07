@@ -1,5 +1,5 @@
 # Leetcode Daily Challenge 12/7/2022
-# 938. Range Sum of BST - EASY
+# 938. Range Sum of BST - EASY - Beats 94%
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
