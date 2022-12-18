@@ -1,0 +1,13 @@
+# Leetcode Daily Challenge 12/18/2022
+# 739. Daily Temperatures - MEDIUM - Beats 91%
+class Solution:
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        res = [0] * len(temperatures)
+        stack = []
+        for i, temp in enumerate(temperatures):
+            while stack and temp > temperatures[stack[-1]]:
+                update = stack.pop()
+                res[update] = i - update
+            stack.append(i)
+
+        return res
